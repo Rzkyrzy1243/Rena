@@ -121,3 +121,15 @@ const appConfig = {
 Object.freeze(appConfig);
 
 export default appConfig;
+
+const ALLOWED_CHANNEL_ID = "123456789012345678"; // ID channel yang diizinkan
+
+client.on("messageCreate", async (message) => {
+    if (message.author.bot) return;
+
+    // Abaikan pesan dari channel lain
+    if (message.channel.id !== ALLOWED_CHANNEL_ID) return;
+
+    if (message.content === "!ping") {
+        message.reply("Pong!");
+    }
