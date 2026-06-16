@@ -544,30 +544,15 @@ export function getRandomColor() {
 
 export default botConfig;
 
-{
-  "guildId": "123456789012345678",
-
   "channels": {
-    "welcome": "111111111111111111",
-    "goodbye": "222222222222222222",
-    "logs": "333333333333333333",
-    "modLogs": "444444444444444444",
-    "ticketCategory": "555555555555555555",
-    "suggestion": "666666666666666666",
-    "announcement": "777777777777777777"
-  },
-
-  "roles": {
-    "member": "888888888888888888",
-    "moderator": "999999999999999999",
-    "admin": "101010101010101010"
-  },
-
-  "settings": {
-    "autoRole": true,
-    "welcomeMessage": true,
-    "ticketSystem": true,
-    "suggestionSystem": true
+    "welcomeChannel": "123456789012345678",
+    "goodbyeChannel": "234567890123456789",
+    "logChannel": "345678901234567890",
+    "modLogChannel": "456789012345678901",
+    "ticketChannel": "567890123456789012",
+    "suggestionChannel": "678901234567890123",
+    "announcementChannel": "789012345678901234",
+    "verificationChannel": "890123456789012345"
   }
 }
 
